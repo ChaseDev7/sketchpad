@@ -1,20 +1,24 @@
 const container = document.querySelector(".container");
-const btnSize = document.querySelector(".size");
 
-btnSize.addEventListener("click", addCode);
-
-function addCode () {
-    for (i = 0; i < 256; i++) {
-        const div = document.createElement("div");
-        div.classList.add(".div");
-        div.style.height = "32px";
-        div.style.width = "32px";
-        div.textContent = i;
-        container.appendChild(div);
-    };
-    btnSize.removeEventListener("click", addCode);
+// Creates the grid of 16 x 16 divs
+for (i = 0; i < 256; i++) {
+    const div = document.createElement("button");
+    div.classList.add("btn-grid");
+    div.style.height = "32px";
+    div.style.width = "32px";
+    div.style.margin = "0px";
+    div.style.padding = "0px";
+    div.style.borderRadius = "0px";
+    div.textContent = "";
+    div.style.backgroundColor = "lightblue";
+    container.appendChild(div);
 };
 
-const divHover = document.querySelector(".div");
+const buttons = document.querySelectorAll(".btn-grid");
+const btnYellow = document.querySelector("btn-yellow")
 
-divHover.addEventListener()
+buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+        button.style.backgroundColor = "black";
+    })
+})
