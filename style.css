@@ -60,6 +60,14 @@ button {
     background-color: red;
 }
 
+.btn-eraser {
+    background-color: white;
+}
+
+.btn-random {
+    background-image: linear-gradient(to right, pink, yellow);
+}
+
 .btn-size {
     padding: 0px 20px;
 }
