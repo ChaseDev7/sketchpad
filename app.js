@@ -24,14 +24,9 @@ function smallGrid () {
         div.style.backgroundColor = "white";
         container.appendChild(div);
     };
-    
-    const buttons = document.querySelectorAll(".btn-grid-small");
 
-    // Changes the color of the grid when clicked, and uses whichever color is selected.
-    buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-        button.style.backgroundColor = btnColor.style.backgroundColor;
-        });
+    container.addEventListener("mouseover", (event) => {
+        event.target.style.backgroundColor = btnColor.style.backgroundColor;
     });
 
     // Selects the color black to be used when btnBlack is clicked.
@@ -40,12 +35,8 @@ function smallGrid () {
     btnBlack.addEventListener("click", runBlackButton);
 
     function runBlackButton() {
-        btnColor.style.backgroundColor = "black";
-        // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = btnColor.style.backgroundColor;
-            });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "black";
         });
     }
 
@@ -55,12 +46,8 @@ function smallGrid () {
     btnYellow.addEventListener("click", runYellowButton);
 
     function runYellowButton() {
-        btnColor.style.backgroundColor = "yellow";
-        // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = btnColor.style.backgroundColor;
-            });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "yellow";
         });
     }
 
@@ -70,12 +57,8 @@ function smallGrid () {
     btnBlue.addEventListener("click", runBlueButton);
 
     function runBlueButton() {
-        btnColor.style.backgroundColor = "blue";
-        // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = btnColor.style.backgroundColor;
-            });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "blue";
         });
     }
 
@@ -85,12 +68,8 @@ function smallGrid () {
     btnOrange.addEventListener("click", runOrangeButton);
 
     function runOrangeButton() {
-        btnColor.style.backgroundColor = "orange";
-        // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = btnColor.style.backgroundColor;
-            });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "orange";
         });
     }
 
@@ -100,12 +79,8 @@ function smallGrid () {
     btnGreen.addEventListener("click", runGreenButton);
 
     function runGreenButton() {
-        btnColor.style.backgroundColor = "green";
-        // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = btnColor.style.backgroundColor;
-            });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "green";
         });
     }
 
@@ -115,12 +90,8 @@ function smallGrid () {
     btnRed.addEventListener("click", runRedButton);
 
     function runRedButton() {
-        btnColor.style.backgroundColor = "red";
-        // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = btnColor.style.backgroundColor;
-            });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "red";
         });
     }
 
@@ -130,13 +101,9 @@ function smallGrid () {
     btnEraser.addEventListener("click", runEraserButton);
 
     function runEraserButton() {
-        btnColor.style.backgroundColor = "white";
-        // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = btnColor.style.backgroundColor;
-            });
-        });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "white";
+        });;
     }
 
     // Generate a random color HEX number.
@@ -158,14 +125,10 @@ function smallGrid () {
     // Generates random color to be used in the grid.
     function runRandomColorButton () {
         // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = generateRandomColor();
-            });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = generateRandomColor();
         });
-    }
-
-    btnRandom.removeEventListener;
+    };
 }
 
 const btnMedium = document.querySelector(".btn-medium");
@@ -188,14 +151,9 @@ function mediumGrid () {
         div.style.backgroundColor = "white";
         container.appendChild(div);
     };
-    
-    const buttons = document.querySelectorAll(".btn-grid-medium");
 
-    // Changes the color of the grid when clicked, and uses whichever color is selected.
-    buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-        button.style.backgroundColor = btnColor.style.backgroundColor;
-        });
+    container.addEventListener("mouseover", (event) => {
+        event.target.style.backgroundColor = btnColor.style.backgroundColor;
     });
 
     // Selects the color black to be used when btnBlack is clicked.
@@ -204,12 +162,8 @@ function mediumGrid () {
     btnBlack.addEventListener("click", runBlackButton);
 
     function runBlackButton() {
-        btnColor.style.backgroundColor = "black";
-        // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = btnColor.style.backgroundColor;
-            });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "black";
         });
     }
 
@@ -219,12 +173,8 @@ function mediumGrid () {
     btnYellow.addEventListener("click", runYellowButton);
 
     function runYellowButton() {
-        btnColor.style.backgroundColor = "yellow";
-        // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = btnColor.style.backgroundColor;
-            });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "yellow";
         });
     }
 
@@ -234,12 +184,8 @@ function mediumGrid () {
     btnBlue.addEventListener("click", runBlueButton);
 
     function runBlueButton() {
-        btnColor.style.backgroundColor = "blue";
-        // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = btnColor.style.backgroundColor;
-            });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "blue";
         });
     }
 
@@ -249,12 +195,8 @@ function mediumGrid () {
     btnOrange.addEventListener("click", runOrangeButton);
 
     function runOrangeButton() {
-        btnColor.style.backgroundColor = "orange";
-        // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = btnColor.style.backgroundColor;
-            });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "orange";
         });
     }
 
@@ -264,12 +206,8 @@ function mediumGrid () {
     btnGreen.addEventListener("click", runGreenButton);
 
     function runGreenButton() {
-        btnColor.style.backgroundColor = "green";
-        // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = btnColor.style.backgroundColor;
-            });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "green";
         });
     }
 
@@ -279,12 +217,8 @@ function mediumGrid () {
     btnRed.addEventListener("click", runRedButton);
 
     function runRedButton() {
-        btnColor.style.backgroundColor = "red";
-        // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = btnColor.style.backgroundColor;
-            });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "red";
         });
     }
 
@@ -294,13 +228,9 @@ function mediumGrid () {
     btnEraser.addEventListener("click", runEraserButton);
 
     function runEraserButton() {
-        btnColor.style.backgroundColor = "white";
-        // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = btnColor.style.backgroundColor;
-            });
-        });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "white";
+        });;
     }
 
     // Generate a random color HEX number.
@@ -322,14 +252,10 @@ function mediumGrid () {
     // Generates random color to be used in the grid.
     function runRandomColorButton () {
         // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = generateRandomColor();
-            });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = generateRandomColor();
         });
-    }
-
-    btnRandom.removeEventListener;
+    };
 }
 
 const btnLarge = document.querySelector(".btn-large");
@@ -353,13 +279,8 @@ function largeGrid () {
         container.appendChild(div);
     };
     
-    const buttons = document.querySelectorAll(".btn-grid-large");
-
-    // Changes the color of the grid when clicked, and uses whichever color is selected.
-    buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-        button.style.backgroundColor = btnColor.style.backgroundColor;
-        });
+    container.addEventListener("mouseover", (event) => {
+        event.target.style.backgroundColor = btnColor.style.backgroundColor;
     });
 
     // Selects the color black to be used when btnBlack is clicked.
@@ -368,12 +289,8 @@ function largeGrid () {
     btnBlack.addEventListener("click", runBlackButton);
 
     function runBlackButton() {
-        btnColor.style.backgroundColor = "black";
-        // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = btnColor.style.backgroundColor;
-            });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "black";
         });
     }
 
@@ -383,12 +300,8 @@ function largeGrid () {
     btnYellow.addEventListener("click", runYellowButton);
 
     function runYellowButton() {
-        btnColor.style.backgroundColor = "yellow";
-        // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = btnColor.style.backgroundColor;
-            });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "yellow";
         });
     }
 
@@ -398,12 +311,8 @@ function largeGrid () {
     btnBlue.addEventListener("click", runBlueButton);
 
     function runBlueButton() {
-        btnColor.style.backgroundColor = "blue";
-        // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = btnColor.style.backgroundColor;
-            });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "blue";
         });
     }
 
@@ -413,12 +322,8 @@ function largeGrid () {
     btnOrange.addEventListener("click", runOrangeButton);
 
     function runOrangeButton() {
-        btnColor.style.backgroundColor = "orange";
-        // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = btnColor.style.backgroundColor;
-            });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "orange";
         });
     }
 
@@ -428,12 +333,8 @@ function largeGrid () {
     btnGreen.addEventListener("click", runGreenButton);
 
     function runGreenButton() {
-        btnColor.style.backgroundColor = "green";
-        // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = btnColor.style.backgroundColor;
-            });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "green";
         });
     }
 
@@ -443,12 +344,8 @@ function largeGrid () {
     btnRed.addEventListener("click", runRedButton);
 
     function runRedButton() {
-        btnColor.style.backgroundColor = "red";
-        // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = btnColor.style.backgroundColor;
-            });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "red";
         });
     }
 
@@ -458,13 +355,9 @@ function largeGrid () {
     btnEraser.addEventListener("click", runEraserButton);
 
     function runEraserButton() {
-        btnColor.style.backgroundColor = "white";
-        // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = btnColor.style.backgroundColor;
-            });
-        });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = "white";
+        });;
     }
 
     // Generate a random color HEX number.
@@ -486,12 +379,17 @@ function largeGrid () {
     // Generates random color to be used in the grid.
     function runRandomColorButton () {
         // Changes the color of the grid when clicked, and uses whichever color is selected.
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                button.style.backgroundColor = generateRandomColor();
-            });
+        container.addEventListener("mouseover", (event) => {
+            event.target.style.backgroundColor = generateRandomColor();
         });
-    }
-
-    btnRandom.removeEventListener;
+    };
 }
+
+// Code to be used to click buttons in grid instead of hovering over them.
+// btnColor.style.backgroundColor = "";
+//         // Changes the color of the grid when clicked, and uses whichever color is selected.
+//         buttons.forEach((button) => {
+//             button.addEventListener("click", () => {
+//                 button.style.backgroundColor = btnColor.style.backgroundColor;
+//             });
+//         });
